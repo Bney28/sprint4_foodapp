@@ -1,7 +1,7 @@
 import React from 'react'
 import { RouterProvider } from 'react-router-dom'
-import { Navbar } from './Layout'
 import { router } from './Router'
+import './Styles/General.sass'
 
 const App = () => {
   return (
