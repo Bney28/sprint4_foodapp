@@ -5,7 +5,6 @@ import '../Styles/Navbar.sass'
 const Navbar = () => {
     return (
         <>
-            <div>Navbar</div>
 
             <div className='divNav'>
                 <Link className='divNav__link btn' to="/" ><i className="fa-solid fa-house-chimney divNav__icon"></i></Link>
