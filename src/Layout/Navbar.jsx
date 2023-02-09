@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
+import '../Styles/Navbar.sass'
 
 const Navbar = () => {
     return (
@@ -7,10 +8,10 @@ const Navbar = () => {
             <div>Navbar</div>
 
             <div className='divNav'>
-                <button className='divNav__btn btn'><i className="fa-solid fa-house-chimney"></i></button>
-                <button className='divNav__btn btn'><i className="fa-solid fa-magnifying-glass"></i></button>
-                <button className='divNav__btn btn'><i className="fa-solid fa-clock-rotate-left"></i></button>
-                <button className='divNav__btn btn'><i className="fa-regular fa-user"></i></button>
+                <Link className='divNav__link btn' to="/" ><i className="fa-solid fa-house-chimney divNav__icon"></i></Link>
+                <Link className='divNav__link btn' to="/search" ><i className="fa-solid fa-magnifying-glass divNav__icon"></i></Link>
+                <Link className='divNav__link btn' to="/orders" ><i className="fa-solid fa-clock-rotate-left divNav__icon"></i></Link>
+                <Link className='divNav__link btn' to="/profile" ><i className="fa-regular fa-user divNav__icon"></i></Link>
             </div>
 
             <div>
