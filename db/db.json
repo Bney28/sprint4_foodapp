@@ -1,0 +1,250 @@
+{
+    "restaurants": [
+        {
+            "id": "1",
+            "name": "The Grill House",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "banner": "https://res.cloudinary.com/dxre2n1ja/image/upload/v1676177085/food-app/primer-plano-chef-cocinando-fondo-borroso_yic4rv.jpg",
+            "stars": "⭐⭐⭐⭐",
+            "schedule": "Work Time 10:00 am - 11:59 pm",
+            "logo": "",
+            "food-categories":["sandwich","burger","salad","wing"],
+            "menu":[
+                {
+                    "idItem": "1",
+                    "name": "Grill Burger",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$25.000",
+                    "image": "",
+                    "category": "burguer",
+                    "cookingTime": "20-25 mins"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Bacon Sandwich",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$28.000",
+                    "image": "",
+                    "category": "sandwich",
+                    "cookingTime": "20-25 mins"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Waldorf Salad",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$36.000",
+                    "image": "",
+                    "category": "salad",
+                    "cookingTime": "10-12 mins"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Wings BBQ",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$31.000",
+                    "image": "",
+                    "category": "wing",
+                    "cookingTime": "20-25 mins"
+                }
+            ]
+
+        },
+        {
+            "id": "2",
+            "name": "La Pasta Restaurant",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "banner": "https://res.cloudinary.com/dxre2n1ja/image/upload/v1676177079/food-app/interior-restaurante_tzphvz.jpg",
+            "stars": "⭐⭐⭐",
+            "schedule": "Work Time 08:00 am - 8:30 pm",
+            "logo": "",
+            "food-categories":["soup","traditional","pasta"],
+            "menu":[
+                {
+                    "idItem": "1",
+                    "name": "Pasta Penne",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$35.000",
+                    "image": "",
+                    "category": "pasta",
+                    "cookingTime": "25-30 mins"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Potato soup",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$28.000",
+                    "image": "",
+                    "category": ["soup", "traditional"],
+                    "cookingTime": "25-30 mins"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Spaghetti with Meat Balls",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$33.000",
+                    "image": "",
+                    "category": "pasta",
+                    "cookingTime": "30 mins"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Lasagna Bolognesa",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$32.000",
+                    "image": "",
+                    "category": "pasta",
+                    "cookingTime": "28-30 mins"
+                }
+            ]
+
+        },
+        {
+            "id": "3",
+            "name": "Mexican's",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "banner": "https://res.cloudinary.com/dxre2n1ja/image/upload/v1676177092/food-app/plano-interior-cafe-sillas-cerca-bar-mesas-madera_k3hzkg.jpg",
+            "stars": "⭐⭐⭐⭐",
+            "schedule": "Work Time 10:00 am - 9:00 pm",
+            "logo": "",
+            "food-categories":["mexican","fries"],
+            "menu":[
+                {
+                    "idItem": "1",
+                    "name": "Tacos al Pastor",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$16.000",
+                    "image": "",
+                    "category": "mexican",
+                    "cookingTime": "10-15 mins"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Mexican Fries",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$18.000",
+                    "image": "",
+                    "category": ["mexican", "fries"],
+                    "cookingTime": "15-20 mins"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Burritos",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$18.000",
+                    "image": "",
+                    "category": "mexican",
+                    "cookingTime": "10-15 mins"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Fries and ribs",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$24.000",
+                    "image": "",
+                    "category": "fries",
+                    "cookingTime": "20-22 mins"
+                }
+            ]
+
+        },
+        {
+            "id": "4",
+            "name": "Paolo's Pizza",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "banner": "",
+            "stars": "⭐⭐⭐",
+            "schedule": "Work Time 11:00 am - 11:59 pm",
+            "logo": "",
+            "food-categories":["pizza"],
+            "menu":[
+                {
+                    "idItem": "1",
+                    "name": "Italian",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$35.000",
+                    "image": "",
+                    "category": "pizza",
+                    "cookingTime": "30-35 mins"
+                },
+                {
+                    "idItem": "2",
+                    "name": "American",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$28.000",
+                    "image": "",
+                    "category": "pizza",
+                    "cookingTime": "30-35 mins"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Spicy",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$30.000",
+                    "image": "",
+                    "category": "pizza",
+                    "cookingTime": "30-35 mins"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Mexican",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$30.000",
+                    "image": "",
+                    "category": "pizza",
+                    "cookingTime": "30-35 mins"
+                }
+            ]
+
+        },
+        {
+            "id": "5",
+            "name": "Las Potatos",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+            "banner": "",
+            "stars": "⭐⭐⭐",
+            "schedule": "Work Time 9:00 am - 10:30 pm",
+            "logo": "",
+            "food-categories":["fries","burger"],
+            "menu":[
+                {
+                    "idItem": "1",
+                    "name": "De Todito",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$18.000",
+                    "image": "",
+                    "category": "fries",
+                    "cookingTime": "20-25 mins"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Simple Fries",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$14.000",
+                    "image": "",
+                    "category": "fries",
+                    "cookingTime": "18-20 mins"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Combo Burguer and Fries",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$25.000",
+                    "image": "",
+                    "category": ["fries", "burger"],
+                    "cookingTime": "20-25 mins"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Chicken Burger",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    "price": "$22.000",
+                    "image": "",
+                    "category": "burguer",
+                    "cookingTime": "15-20 mins"
+                }
+            ]
+
+        }
+        
+    ]
+}
