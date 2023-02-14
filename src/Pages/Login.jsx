@@ -1,19 +1,19 @@
 import React, { useContext } from 'react'
 import logo from '../Imgs/Logo.png'
-import { firebase } from '../api'
-import { auth } from '../Context'
+import { auth, users } from '../api'
+import { auth as authCont } from '../Context'
 
 
 const Login = () => {
 
-  const { user, setUser } = useContext(auth.authContext)
+  const { user, setUser } = useContext(authCont.authContext)
 
   const handleLogin = async () => {
     try {
-      const userFb = await firebase.auth.login()
+      const userFb = await auth.login()
       setUser(userFb)
       const { displayName, email, photoURL } = userFb
-      await firebase.users.createUser({ displayName, email, photoURL })
+      await users.createUser({ displayName, email, photoURL })
       console.log(userFb);
 
     } catch (error) {

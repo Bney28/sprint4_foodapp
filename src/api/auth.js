@@ -1,4 +1,5 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
+import { app } from './firebase'
 
 export const auth = getAuth(app)
 
@@ -12,4 +13,4 @@ export const login = async () => {
   return res.user
 }
 
-export const logout = async () =>  await signOut(auth)
+export const logout = async () => await signOut(auth)

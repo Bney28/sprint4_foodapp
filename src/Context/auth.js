@@ -1,6 +1,6 @@
 import { onAuthStateChanged } from 'firebase/auth'
 import { useState, createContext } from 'react'
-import { firebase } from '../api'
+import { auth as authApi } from '../api'
 
 export const authContext = createContext()
 
@@ -8,7 +8,7 @@ export const AuthProvider = ({children}) => {
 
     const [user, setUser] = useState({})
 
-    onAuthStateChanged(firebase.auth, (_user) => {
+    onAuthStateChanged(authApi.auth, (_user) => {
 
         if (_user) {
             console.log(_user);
