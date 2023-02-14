@@ -1,20 +1,43 @@
 $main-yellow-color: #FFE031
 $dark-gray-color: #414141
+$gradient: #FCFCFC
+
+.icons-cel
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    padding: 5px 0
+
+    p
+        margin: 0
+
+    &__hour
+        font-weight: bold
+        padding-left: 10px
+
+.social-media
+    margin-right: 170px
+    &__icon
+        padding: 0 8px 0 0
+
+.div-icons
+    &__icon
+        padding: 0 8px 0 0
     
 .divNav
     display: flex
+    background-color: $gradient
     justify-content: space-around
     width: 100%
-    position: absolute
+    position: fixed
     bottom: 0
     /* border: red 2px solid */
 
     &__link
         color: $dark-gray-color
-        width: 60px
-        height: 50px
+        margin-bottom: 15px
         /* border: green 2px solid */
-
         &:focus
             color: $main-yellow-color
     
