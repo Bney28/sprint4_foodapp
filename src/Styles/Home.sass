@@ -3,24 +3,40 @@ $dark-gray-color: #414141
 $gray-color: #A7A7A7
 $light-gray-color: #F2F2F2
 
+.card-desc
+    display: flex
+    overflow-y: auto
+    
+    img
+        object-fit: cover
+        width: 300px
+        height: 70px
+        margin: 5px 0 5px 5px
+        border-radius: 8px
+
+p
+    margin-left: 5px
+    margin-top: 10px
+    font-weight: 500
+
 .btn-filter
     display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    width: 150%
+    flex-wrap: wrap
+    width: 100%
     margin-bottom: 8%
+    /* border: blue 2px solid */
 
     .btn
         background-color: $light-gray-color
-        width: 100px
+        width: 90px
         height: 32px
-        margin-right: 1%
+        margin: 1% 1% 0 0
         border-radius: 5px
         font-size: 11px
         padding: 0
+        /* border: red 2px solid */
         &:focus
             background-color: $main-yellow-color
-        /* border: red 2px solid */
     
     &__icon
         margin-right: 5%
