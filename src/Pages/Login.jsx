@@ -1,20 +1,22 @@
 import React, { useContext } from 'react'
 import logo from '../Imgs/Logo.png'
-import { auth, users } from '../api'
+import { auth, usersApi } from '../api'
 import { auth as authCont } from '../Context'
 import '../Styles/Login.sass'
 
 
 const Login = () => {
 
-  const { user, setUser } = useContext(authCont.authContext)
+  const { setUser } = useContext(authCont.authContext)
 
   const handleLogin = async () => {
     try {
       const userFb = await auth.login()
       setUser(userFb)
-      const { displayName, email, photoURL } = userFb
-      await users.createUser({ displayName, email, photoURL })
+
+      const { displayName, email, photoURL, uid } = userFb
+      await usersApi.createUser({ displayName, email, photoURL }, uid)
+
       console.log(userFb);
 
     } catch (error) {
