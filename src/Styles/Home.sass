@@ -3,6 +3,28 @@ $dark-gray-color: #414141
 $gray-color: #A7A7A7
 $light-gray-color: #F2F2F2
 
+.location
+    display: flex
+    padding: 0 5px
+    &__icon
+        font-size: 23px
+        color: $main-yellow-color
+
+.address
+    display: flex
+    flex-direction: column
+    &__deliver
+        text-transform: uppercase
+        color: $main-yellow-color
+        font-size: 10px
+    
+    &__city
+        color: $dark-gray-color
+
+    p
+        margin: 0
+        padding: 0 5px
+
 .card-desc
     display: flex
     overflow-y: auto

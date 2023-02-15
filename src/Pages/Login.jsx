@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import logo from '../Imgs/Logo.png'
 import { auth, users } from '../api'
 import { auth as authCont } from '../Context'
+import '../Styles/Login.sass'
 
 
 const Login = () => {
@@ -25,9 +26,16 @@ const Login = () => {
 
   return (
     <>
-      <div>Login</div>
-      <img src={logo} alt="logo" />
-      <button onClick={handleLogin} className="btn">Login</button>
+      <div className="logo-login">
+        <img src={logo} alt="logo" />
+      </div>
+      <div className="texts">
+        <h4 className="texts__title">Sing in</h4>
+        <p className="texts__text">Login or create an account with your phone number to start ordering</p>
+      </div>
+      <div className="btn-login">
+        <button onClick={handleLogin} className="btn">Login</button>
+      </div>
     </>
   )
 }

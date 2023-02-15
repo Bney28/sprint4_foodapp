@@ -15,10 +15,19 @@ const Home = () => {
       {user ?
         <>
           <div className="cont-ppal">
+
+            <div className="location">
+              <i class="fa-solid fa-location-dot location__icon"></i>
+              <div className='address'>
+                <p className='address__deliver'>Deliver to</p>
+                <p className='address__city'>882 Well St, New York</p>
+              </div>
+            </div>
+
             <div className="card-desc">
-              <img src="https://res.cloudinary.com/dxre2n1ja/image/upload/v1676398916/food-app/Promo_1_jvxz2w.png" alt="image-descount" className='card-desc__imgn'/>
-              <img src="https://res.cloudinary.com/dxre2n1ja/image/upload/v1676399462/food-app/Promo_2_hgtikp.png" alt="image-descount" className='card-desc__imgn'/>
-              <img src="https://res.cloudinary.com/dxre2n1ja/image/upload/v1676177775/food-app/4600925_o7wkl7.jpg" alt="image-descount" className='card-desc__imgn'/>
+              <img src="https://res.cloudinary.com/dxre2n1ja/image/upload/v1676398916/food-app/Promo_1_jvxz2w.png" alt="image-descount" className='card-desc__imgn' />
+              <img src="https://res.cloudinary.com/dxre2n1ja/image/upload/v1676399462/food-app/Promo_2_hgtikp.png" alt="image-descount" className='card-desc__imgn' />
+              <img src="https://res.cloudinary.com/dxre2n1ja/image/upload/v1676177775/food-app/4600925_o7wkl7.jpg" alt="image-descount" className='card-desc__imgn' />
             </div>
 
             <p>Restaurants and Cafes</p>
