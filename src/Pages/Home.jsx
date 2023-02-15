@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import img from '../Imgs/Img.png'
-import desc from '../Imgs/4600925.jpg'
 import '../Styles/Home.sass'
 import { Navigate } from 'react-router-dom'
 import { auth } from '../Context'
@@ -17,7 +16,7 @@ const Home = () => {
           <div className="cont-ppal">
 
             <div className="location">
-              <i class="fa-solid fa-location-dot location__icon"></i>
+              <i className="fa-solid fa-location-dot location__icon"></i>
               <div className='address'>
                 <p className='address__deliver'>Deliver to</p>
                 <p className='address__city'>882 Well St, New York</p>
