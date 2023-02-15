@@ -1,11 +1,15 @@
 import React, { useContext } from 'react'
-import img from '../Imgs/Img.png'
 import '../Styles/Home.sass'
 import { Navigate } from 'react-router-dom'
 import { auth } from '../Context'
+import { RestaurantCard } from '../Components'
 
 
 const Home = () => {
+
+  //FUNCIONES EN ESTE COMPONENTE
+  // - Impirmir cards de restaurantesa
+  // - Filtrado de restaurantes por categoria
 
   const { user } = useContext(auth.authContext)
 
@@ -42,23 +46,11 @@ const Home = () => {
               <button className="btn"><i className="fa-solid fa-utensils btn-filter__icon"></i>Soup</button>
             </div>
 
-
             <div className="card card-rest">
-
-              <div className="card-rest__img">
-                <img src={img} className="img-fluid rounded-start" alt="" />
-              </div>
-
-              <div className="card-rest__body">
-                <h5 className="card-rest__title">Pardes Restaurant</h5>
-                <p className="card-rest__stars">
-                  <i className="fa-solid fa-star card-rest__icon"></i>
-                </p>
-                <p className="card-rest__text">Work time 09:30-23:00</p>
-                <p className="card-rest__price">Cost 4$</p>
-              </div>
-
+              <RestaurantCard />
             </div>
+
+
           </div>
         </>
         :
