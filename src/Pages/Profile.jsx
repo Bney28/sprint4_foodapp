@@ -31,6 +31,9 @@ const Profile = () => {
               <h6><input type="text" placeholder='Phone Number' value={phoneNumber}/></h6>
               <h6><input type="text" placeholder='Birth Date' value={birdthDate}/></h6>
             </div>
+            <div className='btn-edit'>
+              <button onClick={""} className="btn">Edit Profile</button>
+            </div>
             <div className='btn-logout'>
               <button onClick={handleLogout} className="btn">Log Out</button>
             </div>
