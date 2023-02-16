@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import '../Styles/Home.sass'
 import { Navigate } from 'react-router-dom'
 import { auth } from '../Context'
-import { RestaurantCard } from '../Components'
+import { GetRestaurants } from '../Containers'
 
 
 const Home = () => {
@@ -47,7 +47,7 @@ const Home = () => {
             </div>
 
             <div className="card card-rest">
-              <RestaurantCard />
+              <GetRestaurants />
             </div>
 
 

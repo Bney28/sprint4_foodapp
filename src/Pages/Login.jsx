@@ -17,7 +17,7 @@ const Login = () => {
       const { displayName, email, photoURL, uid } = userFb
       await usersApi.createUser({ displayName, email, photoURL }, uid)
 
-      console.log(userFb);
+      /* console.log(userFb); */
 
     } catch (error) {
       console.log(error);
