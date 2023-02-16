@@ -1,4 +1,4 @@
 import CreateProduct from "./CreateProduct";
-import GetProduct from "./GetProduct";
+import GetRestaurants from "./GetRestaurants";
 
-export {CreateProduct, GetProduct}
+export {CreateProduct, GetRestaurants}

@@ -11,7 +11,7 @@ export const AuthProvider = ({children}) => {
     onAuthStateChanged(authApi.auth, (_user) => {
 
         if (_user) {
-            console.log(_user);
+            /* console.log(_user); */
             setUser(_user)
         } else {
             setUser(null)

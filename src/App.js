@@ -1,15 +1,19 @@
 import React from 'react'
 import { RouterProvider } from 'react-router-dom'
-import { AuthProvider } from './Context/auth'
+import { auth, restaurant } from './Context'
 import { router } from './Router'
 import './Styles/General.sass'
 
 const App = () => {
   return (
     <>
-      <AuthProvider>
-        <RouterProvider router={router} />
-      </AuthProvider>
+      <auth.AuthProvider>
+        <restaurant.RestaurantsProvider>
+
+          <RouterProvider router={router} />
+
+        </restaurant.RestaurantsProvider>
+      </auth.AuthProvider>
     </>
   )
 }
