@@ -6,22 +6,22 @@ export const restDispatcherContext = createContext()
 
 export const RestaurantsProvider = ({ children }) => {
 
-    const [data, setData] = useState()
+    const [rest, setRest] = useState()
     const [error, setError] = useState("")
 
 
     const getData = async () => {
         try {
             const res = await restaurantsApi.getRest()
-            setData(res.dataR)
+            setRest(res.dataR)
         
         } catch (error) {
             setError(error.message)
         }
     }
 
-    const state = { data, error }
-    const dispatchers = { getData }
+    const state = { rest, error }
+    const dispatchers = { getData, setRest }
 
     return (
         <>

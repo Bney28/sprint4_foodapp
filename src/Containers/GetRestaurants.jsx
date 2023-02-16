@@ -5,18 +5,18 @@ import RestaurantList from '../Components/RestaurantList'
 const GetRestaurants = () => {
 
   const { getData } = useContext(restaurant.restDispatcherContext)
-  const { data, error } = useContext(restaurant.restContext)
+  const { rest, error } = useContext(restaurant.restContext)
 
   useEffect(() => {
-    if (!data) {
+    if (!rest) {
       getData()
     }
-  }, [data])
+  }, [rest])
 
   return (
     <>
       <div className="cont-getrest">
-        <RestaurantList list={data}/>
+        <RestaurantList list={rest}/>
       </div>
     </>
   )
