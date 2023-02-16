@@ -8,20 +8,22 @@ export const RestaurantsProvider = ({ children }) => {
 
     const [rest, setRest] = useState()
     const [error, setError] = useState("")
-
+    const [isLoading, setIsLoading] = useState(false)
 
     const getData = async () => {
         try {
+            setIsLoading(true)
             const res = await restaurantsApi.getRest()
+            setIsLoading(false)
             setRest(res.dataR)
-        
+
         } catch (error) {
             setError(error.message)
         }
     }
 
-    const state = { rest, error }
-    const dispatchers = { getData, setRest }
+    const state = { rest, error, isLoading }
+    const dispatchers = { getData, setRest, setIsLoading }
 
     return (
         <>

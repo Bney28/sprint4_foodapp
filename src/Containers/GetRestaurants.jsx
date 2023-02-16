@@ -5,7 +5,7 @@ import RestaurantList from '../Components/RestaurantList'
 const GetRestaurants = () => {
 
   const { getData } = useContext(restaurant.restDispatcherContext)
-  const { rest, error } = useContext(restaurant.restContext)
+  const { rest, isLoading } = useContext(restaurant.restContext)
 
   useEffect(() => {
     if (!rest) {
@@ -15,8 +15,11 @@ const GetRestaurants = () => {
 
   return (
     <>
+      {
+        isLoading && <div className="spinner-border text-warning" role="status"></div>
+      }
       <div className="cont-getrest">
-        <RestaurantList list={rest}/>
+        <RestaurantList list={rest} />
       </div>
     </>
   )
