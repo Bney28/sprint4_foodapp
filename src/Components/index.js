@@ -1,6 +1,6 @@
-import ProductCard from "./ProductCard";
-import ProductList from "./ProductList";
 import RestaurantCard from "./RestaurantCard";
 import RestaurantList from "./RestaurantList";
+import DishCard from "./DishCard"
+import DishList from "./DishList"
 
-export {ProductCard, ProductList, RestaurantCard, RestaurantList}
+export { RestaurantCard, RestaurantList, DishCard, DishList}
