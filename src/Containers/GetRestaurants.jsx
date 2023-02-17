@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { restaurant } from '../Context'
 import RestaurantList from '../Components/RestaurantList'
 
-const GetRestaurants = () => {
+const GetRestaurants = ({ restFiltered }) => {
 
   const { getData } = useContext(restaurant.restDispatcherContext)
   const { rest, isLoading } = useContext(restaurant.restContext)
@@ -19,7 +19,7 @@ const GetRestaurants = () => {
         isLoading && <div className="spinner-border text-warning" role="status"></div>
       }
       <div className="cont-getrest">
-        <RestaurantList list={rest} />
+        <RestaurantList list={restFiltered} />
       </div>
     </>
   )
