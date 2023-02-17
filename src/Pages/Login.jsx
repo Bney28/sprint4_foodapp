@@ -3,11 +3,14 @@ import logo from '../Imgs/Logo.png'
 import { auth, usersApi } from '../api'
 import { auth as authCont } from '../Context'
 import '../Styles/Login.sass'
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
 
   const { setUser } = useContext(authCont.authContext)
+
+  let navigate = useNavigate()
 
   const handleLogin = async () => {
     try {
@@ -17,6 +20,7 @@ const Login = () => {
       const { displayName, email, photoURL, uid } = userFb
       await usersApi.createUser({ displayName, email, photoURL }, uid)
 
+      navigate("/")
       /* console.log(userFb); */
 
     } catch (error) {
