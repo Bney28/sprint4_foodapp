@@ -1,13 +1,11 @@
-import { collection, addDoc, getDocs } from "firebase/firestore";
-
+import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase"
-
 
 // Traer Platos de la db
 
-export const getDish = async (dishId) => {
+export const getDish = async (restid) => {
 
-    const dbCollection = collection(db, `restaurant/${dishId}/dish`)
+    const dbCollection = collection(db, `restaurant/${restid}/dish`)
    
     //snapshot empaqueta los datos
     const snapshot = await getDocs(dbCollection)
@@ -24,9 +22,9 @@ export const getDish = async (dishId) => {
     return { dataD }
 }
 
-export const createDish = async (dish, restId) => {
+/* export const createDish = async (dish, restId) => {
 
     const dbCollection = collection(db, `restaurant/${restId}/dish`)
     await addDoc(dbCollection, dish)
 
-}
+} */

@@ -5,26 +5,28 @@ export const dishContext = createContext()
 
 export const DishesProvider = ({ children }) => {
 
-    const [dish, setDish] = useState()
+    const [dishInfo, setDishInfo] = useState()
     const [error, setError] = useState()
+    const [isLoading, setIsLoading] = useState(false)
 
-    const getData = async () => {
+    const getDataDishes = async (restid) => {
         try {
-            /* setIsLoading(true) */
-            const res = await dishApi.getDish()
-            /* setIsLoading(false) */
-            setDish(res.dataD)
+            setIsLoading(true)
+            const res = await dishApi.getDish(restid)
+            setIsLoading(false)
+            setDishInfo(res.dataD)
             console.log("Log desde context", res.dataD);
-
 
         } catch (error) {
             setError(error.message)
         }
     }
 
+    console.log(dishInfo);
+
     return (
         <>
-            <dishContext.Provider value={{ dish, setDish, getData }}>
+            <dishContext.Provider value={{ dishInfo, setDishInfo, getDataDishes, isLoading }}>
                 {children}
             </dishContext.Provider>
         </>
