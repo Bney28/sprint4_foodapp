@@ -1,26 +1,26 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
+const RestaurantCard = ({ id, banner, name, description, stars, schedule }) => {
 
-const RestaurantCard = ({ banner, name, description, stars, schedule }) => {
-
-  //FUNCIONES EN ESTE COMPONENTE
-  // Traer la data de los restaurantes de la Firesotre
-  // Mapear e impirmir una card por cada restaurante
+  const LINK_ADDRESS = `/restaurant/${id}`
 
   return (
     <>
-      <div className='rest-list__cont'>
-        <div className="card-rest__img">
-          <img src={banner} className="img-fluid rounded-start" alt="banner" />
-        </div>
+      <Link to={LINK_ADDRESS}>
+        <div className='rest-list__cont'>
+          <div className="card-rest__img">
+            <img src={banner} className="img-fluid rounded-start" alt="banner" />
+          </div>
 
-        <div className="card-rest__body">
-          <h5 className="card-rest__title">{name}</h5>
-          <p className="card-rest__stars">{stars}</p>
-          <p className="card-rest__text">{schedule}</p>
-          <p className="card-rest__price">{description}</p>
+          <div className="card-rest__body">
+            <h5 className="card-rest__title">{name}</h5>
+            <p className="card-rest__stars">{stars}</p>
+            <p className="card-rest__text">{schedule}</p>
+            <p className="card-rest__price">{description}</p>
+          </div>
         </div>
-      </div>
+      </Link>
     </>
   )
 }

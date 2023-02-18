@@ -1,5 +1,4 @@
-import { collection, setDoc, getDocs } from "firebase/firestore";
-
+import { collection, setDoc, getDocs, getDoc, doc } from "firebase/firestore";
 import { db } from "./firebase"
 
 const dbCollection = collection(db, "restaurant")
@@ -24,3 +23,12 @@ export const getRest = async () => {
 
 // Crear nuevo Restaurante
 export const createRest = async (restId) => await setDoc(dbCollection, restId)
+
+export const getRestDetails = async (_id) => {
+
+  const snapshot = await getDoc(doc(dbCollection, _id))
+  const restDet = snapshot.data()
+  restDet.id = snapshot.id
+
+  return { data: restDet }
+}

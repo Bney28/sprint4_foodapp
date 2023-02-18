@@ -8,10 +8,10 @@ const GetRestaurants = ({ restFiltered }) => {
   const { rest, isLoading } = useContext(restaurant.restContext)
 
   useEffect(() => {
-    if (!rest) {
+    if (rest) {
       getData()
     }
-  }, [rest])
+  }, [])
 
   return (
     <>

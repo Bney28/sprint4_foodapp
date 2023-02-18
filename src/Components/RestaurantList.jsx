@@ -11,6 +11,7 @@ const RestaurantList = ({ list }) => {
                         return (
                             <RestaurantCard
                                 key={e.id}
+                                id={e.id}
                                 banner={e.banner}
                                 name={e.name}
                                 description={e.description}
