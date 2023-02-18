@@ -4,5 +4,6 @@ import Profile from "./Profile";
 import Search from "./Search";
 import Login from "./Login";
 import Dishes from "./Dishes";
+import RestDetail from "./RestDetail";
 
-export {Home, Orders, Profile, Search, Login, Dishes}
+export {Home, Orders, Profile, Search, Login, Dishes, RestDetail}
