@@ -12,13 +12,12 @@ const RestDetail = () => {
     const { getDataDetails, setCurrentRest } = useContext(restaurant.restDispatcherContext)
 
     useEffect(() => {
-
+        setCurrentRest(null)
         if (restid) {
-            setCurrentRest(null)
             getDataDetails(restid)
         }
 
-    }, [])
+    }, [restid])
 
 
     return (
