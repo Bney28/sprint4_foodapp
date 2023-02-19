@@ -80,7 +80,9 @@ a
 
         img
             object-fit: cover
-            width: 100%
+            border-radius: 12px
+            width: 99%
+            margin: 0.5%
             height: 250px
 
 .divInfo
@@ -128,7 +130,10 @@ a
         display: flex
         justify-content: space-around
         background-color: $main-yellow-color
-        /* border: blue 2px solid */
+        &:focus
+           background-color: $main-yellow-color
+        
         p
             margin: 0
+        /* border: blue 2px solid */
 
