@@ -1,17 +1,18 @@
 import React from 'react'
-import DishCard from './DishCard'
+import InfoDish from './InfoDish';
 
 const DishList = ({ list }) => {
   console.log({list});
+
   return (
     <>
-      <div>DishList</div>
       <div className="dish-list">
         {
           list && list.map((e) => {
             return (
-              <DishCard
+              <InfoDish
                 key={e.id}
+                id={e.id}
                 image={e.image}
                 name={e.name}
                 description={e.description}
