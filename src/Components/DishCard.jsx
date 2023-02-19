@@ -1,10 +1,9 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 const DishCard = ({ currentDish }) => {
-
-  console.log(currentDish);
-
-
+  /* console.log(currentDish); */
+  
   return (
     <>
       <div className="divCardDish">
@@ -20,7 +19,7 @@ const DishCard = ({ currentDish }) => {
           </div>
 
           <div className='divInfo__description'>
-            <p>{currentDish.description} {currentDish.description} {currentDish.description}</p>
+            <p>{currentDish.description}{currentDish.description}{currentDish.description}</p>
           </div>
         </div>
 
@@ -30,7 +29,7 @@ const DishCard = ({ currentDish }) => {
             <input type="text" className="form-control" />
             <button className="btn">-</button>
           </div>
-          
+
           <button className='btn buttons__add'>
             <p>Add</p>
             {currentDish.price}

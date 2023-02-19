@@ -14,7 +14,7 @@ export const router = createBrowserRouter(
                 <Route path="/profile" element={<Profile />} />
             </ Route>
             <Route path="/restaurant/:restid/*" element={<RestDetail />} />
-            {<Route path="/restaurant/:restid/:dishid/*" element={<DishDetail />} />}
+            <Route path="/restaurant/:restid/:dishid/*" element={<DishDetail />} />
 
         </>
     )

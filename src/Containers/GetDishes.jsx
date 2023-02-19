@@ -12,11 +12,9 @@ const GetDishes = () => {
   useEffect(() => {
     
     getDataDishes(restid)
-    /* if (dishInfo) {
-    } */
   }, [restid])
 
-  console.log(dishInfo);
+  /* console.log(dishInfo); */
 
   return (
     <>

@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const RestaurantCard = ({ id, banner, name, description, stars, schedule }) => {
-
-  const LINK_ADDRESS = `/restaurant/${id}`
+  
+  const LINK_ADDRESS = `/restaurant/${id}`     // Link sends to RestDetail page
 
   return (
     <>

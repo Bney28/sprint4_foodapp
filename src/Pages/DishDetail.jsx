@@ -7,7 +7,7 @@ const DishDetail = () => {
 
   const { currentDish, setCurrentDish, getCurrentDish } = useContext(dish.dishContext)
   const { restid, dishid } = useParams()
-  const LINK_ADDRESS = `/restaurants/${restid}/`
+  const LINK_ADDRESS = `/restaurant/${restid}/`
 
   useEffect(() => {
 

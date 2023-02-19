@@ -2,7 +2,7 @@ import React from 'react'
 import InfoDish from './InfoDish';
 
 const DishList = ({ list }) => {
-  console.log({list});
+  /* console.log({list}); */
 
   return (
     <>
