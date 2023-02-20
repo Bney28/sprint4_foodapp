@@ -14,7 +14,7 @@ const InfoDish = ({ image, name, price, id }) => {
                     </div>
                     <div className="divInfoDish__info">
                         <h5>{name}</h5>
-                        <p>Price: {price}</p>
+                        <p>Price: ${price}</p>
                     </div>
                 </Link>
             </div>

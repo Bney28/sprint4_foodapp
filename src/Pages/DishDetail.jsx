@@ -17,7 +17,7 @@ const DishDetail = () => {
     }
   }, [dishid])
 
-  console.log(currentDish);
+  /* console.log(currentDish); */
 
   return (
     <>

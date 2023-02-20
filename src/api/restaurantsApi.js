@@ -32,3 +32,4 @@ export const getRestDetails = async (_id) => {
 
   return { data: restDet }
 }
+
