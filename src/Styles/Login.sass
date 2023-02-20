@@ -1,6 +1,7 @@
 $main-yellow-color: #FFE031
 $dark-gray-color: #414141
 $gray-btn: #6C6C6C
+$light-gray-color: #F2F2F2
 
 .logo-login
     display: flex
@@ -38,5 +39,36 @@ $gray-btn: #6C6C6C
     button
         width: 100%
         font-size: 16px
-        /* border: red 2px solid */
 
+/* ----- User Form Profile ----- */
+
+.divForm
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    &__img
+        margin: 5% 0
+        img
+            border-radius: 50%
+            border: $dark-gray-color 1px solid
+
+    &__form
+        width: 95%
+        margin: 5% 0
+        input
+            width: 100%
+            height: 40px
+            border: none
+            border-radius: 5px
+            margin: 2% 0 0 0
+            background-color: $light-gray-color
+
+    .buttonSubmit
+        position: absolute
+        bottom: 8%
+        width: 90%
+        border-radius: 8px
+        margin: 0 5%
+        background-color: $main-yellow-color
