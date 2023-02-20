@@ -1,0 +1,52 @@
+$main-yellow-color: #FFE031
+$dark-gray-color: #414141
+$gray-color: #A7A7A7
+$light-gray-color: #F2F2F2
+
+
+.noOrders
+    margin: 35% 0
+    text-align: center
+    /* border: red 2px solid */
+
+.h5
+    text-align: center
+    font-size: 16px
+    margin: 5% 0
+
+.divOrders
+    margin: 3% 2%
+    &__cards
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        border-radius: 8px
+        margin: 2% 0
+
+    &__img
+        display: flex
+        img
+            border-radius: 12px
+            object-fit: cover
+            width: 100px
+            height: 70px
+    
+    &__info
+        margin: 0 2%
+        p, h5
+            margin: 0
+
+.btnDelete
+    position: absolute
+    bottom: 12%
+    width: 90%
+    border-radius: 8px
+    margin: 0 5%
+    background-color: #a00404
+    
+    button
+        color: $light-gray-color
+        width: 100%
+        font-size: 16px
+

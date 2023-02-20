@@ -10,6 +10,7 @@ export const RestaurantsProvider = ({ children }) => {
     const [error, setError] = useState("")
     const [isLoading, setIsLoading] = useState(false)
     const [currentRest, setCurrentRest] = useState()
+    const [order, setOrder] = useState([])
 
     const getData = async () => {
         try {
@@ -36,8 +37,8 @@ export const RestaurantsProvider = ({ children }) => {
         }
     }
 
-    const state = { rest, error, isLoading, currentRest }
-    const dispatchers = { getData, setRest, setCurrentRest, setIsLoading, getDataDetails }
+    const state = { rest, error, isLoading, currentRest, order }
+    const dispatchers = { getData, setRest, setCurrentRest, setIsLoading, getDataDetails, setOrder }
 
     return (
         <>
