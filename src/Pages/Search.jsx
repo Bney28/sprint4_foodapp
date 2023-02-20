@@ -24,7 +24,7 @@ const Search = () => {
   }
 
   const handleSearch = (e) => {
-    
+
     const searching = e.target.value
 
     for (let i = 0; i < allDishes.length; i++) {
@@ -58,6 +58,11 @@ const Search = () => {
     setFiltered(dishfilter)
   }
 
+  const deleteText = (e) => {
+    let inputS = document.getElementById("inputS")
+    inputS.value = ""
+  }
+
   useEffect(() => {
     if (allDishes.length === 0) {
       getData()
@@ -72,11 +77,19 @@ const Search = () => {
         <div className="divSearch__iconInput">
           <i className="fa-solid fa-magnifying-glass"></i>
           <input
+            id='inputS'
             type="text"
             placeholder='Search for a dish'
             onChange={(e) => handleSearch(e)}
           />
-          <i className="fa-solid fa-trash-can"></i>
+
+          <div className="divSearch__btn">
+            <button
+              onClick={deleteText}
+              className='btn'>
+              <i className="fa-solid fa-xmark"></i>
+            </button>
+          </div>
         </div>
         <div className="divSearch__text">
           <p>Recent Searches</p>
