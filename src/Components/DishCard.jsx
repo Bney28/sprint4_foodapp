@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { restaurant } from '../Context'
+import { v4 as uuidv4 } from 'uuid' 
+
 
 const DishCard = ({ currentDish }) => {
 
@@ -29,6 +31,7 @@ const DishCard = ({ currentDish }) => {
 
   const newOrder = () => {
     let orderInfo = {
+      id: uuidv4(),
       name: name,
       description: description,
       image: image,

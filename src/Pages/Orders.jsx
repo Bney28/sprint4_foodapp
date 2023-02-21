@@ -13,9 +13,7 @@ const Orders = () => {
 
   const deleteOneOrder = (_id) => {
     console.log("click delete One");
-    /* order.forEach(e => {
-      return e.id !== _id
-    }); */
+    setOrder(order.filter(e => e.id !== _id))
   }
 
   if (order.length === 0) {
@@ -40,7 +38,7 @@ const Orders = () => {
                 </div>
 
                 <div className="deleteBtn">
-                  <button className='btn' onClick={(e)=> deleteOneOrder(e.id)}>
+                  <button className='btn' onClick={() => deleteOneOrder(e.id)}>
                     <i className="fa-solid fa-trash-can"></i>
                   </button>
                 </div>
